@@ -1,9 +1,9 @@
 package PlayerMultimediale;
 
-public abstract class Multimedia {
+public abstract class Multimediale {
     public String titolo;
 
-    public Multimedia (String titolo) {
+    public Multimediale(String titolo) {
         this.titolo = titolo;
     }
 

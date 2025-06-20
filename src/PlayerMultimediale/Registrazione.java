@@ -3,7 +3,7 @@ package PlayerMultimediale;
 import entities.Play;
 import entities.Volume;
 
-public class Registrazione extends Multimedia implements Play, Volume {
+public class Registrazione extends Multimediale implements Play, Volume {
 
     private int durata;
     private int volume;

@@ -1,8 +1,9 @@
 package PlayerMultimediale;
 
 import entities.Luminosita;
+import entities.Show;
 
-public class Immagine extends Multimedia implements Luminosita {
+public class Immagine extends Multimediale implements Luminosita, Show {
 
     private int luminosita;
 
@@ -11,6 +12,7 @@ public class Immagine extends Multimedia implements Luminosita {
         this.luminosita = luminosita;
     }
 
+    @Override
     public void show(){
         System.out.println(titolo);
         for (int i = 0; i < luminosita; i++){

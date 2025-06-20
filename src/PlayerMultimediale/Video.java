@@ -2,9 +2,10 @@ package PlayerMultimediale;
 
 import entities.Luminosita;
 import entities.Play;
+import entities.Show;
 import entities.Volume;
 
-public class Video extends Multimedia implements Play, Volume, Luminosita {
+public class Video extends Multimediale implements Play, Volume, Luminosita, Show {
     public int durata;
     public int volume;
     public int luminosita;
@@ -26,6 +27,13 @@ public class Video extends Multimedia implements Play, Volume, Luminosita {
                     System.out.println("*");
                 }
             }
+        }
+    }
+    @Override
+    public void show(){
+        System.out.println(titolo);
+        for (int i = 0; i < luminosita; i++){
+            System.out.println("!");
         }
     }
 
