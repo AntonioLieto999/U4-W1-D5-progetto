@@ -31,9 +31,9 @@ public class Video extends Multimediale implements Play, Volume, Luminosita, Sho
     }
     @Override
     public void show(){
-        System.out.println(titolo);
+        System.out.print(titolo);
         for (int i = 0; i < luminosita; i++){
-            System.out.println("!");
+            System.out.print("!");
         }
     }
 
@@ -58,5 +58,14 @@ public class Video extends Multimediale implements Play, Volume, Luminosita, Sho
         if(volume > 0){
             volume--;
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Video { " + "titolo =" + titolo +
+                ", durata =" + durata +
+                ", volume =" + volume +
+                ", luminosita =" + luminosita +
+                '}';
     }
 }

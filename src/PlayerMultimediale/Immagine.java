@@ -16,7 +16,7 @@ public class Immagine extends Multimediale implements Luminosita, Show {
     public void show(){
         System.out.println(titolo);
         for (int i = 0; i < luminosita; i++){
-            System.out.println("!");
+            System.out.print("!");
         }
     }
     @Override
@@ -30,4 +30,12 @@ public class Immagine extends Multimediale implements Luminosita, Show {
             luminosita--;
         }
     }
+
+    @Override
+    public String toString() {
+        return "Immagine { " +
+                "titolo ='" + titolo + '\'' + "luminosità =" + luminosita +
+                '}';
+    }
+
 }

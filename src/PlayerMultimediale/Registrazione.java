@@ -17,9 +17,9 @@ public class Registrazione extends Multimediale implements Play, Volume {
     @Override
     public void play() {
         for (int i = 0; i <volume; i++){
-            System.out.println("!");
+            System.out.print("!");
             for (int j = 0; j < durata; j++){
-                System.out.println(titolo);
+                System.out.print(titolo);
             }
         }
     }
@@ -32,5 +32,13 @@ public class Registrazione extends Multimediale implements Play, Volume {
         if(volume > 0){
             volume--;
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Registrazione { " + "titolo =" + titolo +
+                ", durata =" + durata +
+                ", volume =" + volume +
+                '}';
     }
 }
